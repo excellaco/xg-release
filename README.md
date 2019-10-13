@@ -169,17 +169,3 @@ Flags:
 Of the possible command line arguments only username, accesstoken and reponame are required. Below is an example execution:
 
 `xg publish -u alexm118 -a ****** -r alex-test`
-
-## Contributing
-
-### Cloning the Repository
-Go has a specific convention for locating code. You should clone this repository to `${HOME}/.go/src/github.com/excellaco/xg`.
-
-### Creating a Release
-- Bump up the current app version in `version.go`. Commit the change to `master`.
-- Create a git tag to match the new version. For reference, view existing tags with `git tag`.
-- Install GoReleaser: https://goreleaser.com/install/
-- Create a Github API token for use by GoReleaser. Export this token to the environment variable `GITHUB_TOKEN`.
-- Run `goreleaser --rm-dist` to build and publish a release.
-
-
